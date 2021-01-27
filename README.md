@@ -26,25 +26,39 @@ dependencies {
 ## Usage
 In activity or fragment.
 ```kotlin
-// <DetailActivity> is the activity purpose.
-startActivity<DetailActivity>() // Intent to another activity.
+/**
+ * <DetailActivity> is the activity purpose.
+ * Intent to another activity.
+ */
+startActivity<DetailActivity>()
 
-// PathToActivityModuleClass. Example: com.github.fajaragungpramana.detail.DetailActivity
-startActivityModule("PathToActivityModuleClass")  // Intent to another activity module.
+/**
+ * PathToActivityModuleClass. Example: com.github.fajaragungpramana.detail.DetailActivity
+ * Intent to another activity module.
+ */
+startActivityModule("PathToActivityModuleClass")
 ```
 
 Sending data to purpose.
 ```kotlin
-// <DetailActivity> is the activity purpose.
-startActivity<DetailActivity>("key" to "value", "key" to 1) // Key always string, value can be adjusted as desired
+/**
+ * <DetailActivity> is the activity purpose.
+ * Key always string, value can be adjusted as desired
+ */
+startActivity<DetailActivity>("key" to "value", "key" to 1)
 
-startActivityModule("PathToActivityModuleClass", "key" to "value", "key" to 1)  // Key always string, value can be adjusted as desired
+/**
+ * Key always string, value can be adjusted as desired.
+ */
+startActivityModule("PathToActivityModuleClass", "key" to "value", "key" to 1)
 ```
 
 To receive the data sent
 ```kotlin
+/**
+ * intent.extras?.(Adjust to the type of data sent)
+ */
 intent.extras?.getString("key")
-
 intent.extras?.getInt("key")
 ```
 
