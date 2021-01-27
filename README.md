@@ -26,6 +26,7 @@ dependencies {
 ## Usage
 In activity or fragment.
 ```kotlin
+// <DetailActivity> is the activity purpose.
 startActivity<DetailActivity>() // Intent to another activity.
 
 // PathToActivityModuleClass. Example: com.github.fajaragungpramana.detail.DetailActivity
@@ -34,6 +35,7 @@ startActivityModule("PathToActivityModuleClass")  // Intent to another activity 
 
 Sending data to purpose.
 ```kotlin
+// <DetailActivity> is the activity purpose.
 startActivity<DetailActivity>("key" to "value", "key" to 1) // Key always string, value can be adjusted as desired
 
 startActivityModule("PathToActivityModuleClass", "key" to "value", "key" to 1)  // Key always string, value can be adjusted as desired
