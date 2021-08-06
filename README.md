@@ -19,7 +19,7 @@ allProjects {
 Add the dependency:
 ```gradle
 dependencies {
-	implementation 'com.github.fajaragungpramana:intent-extension:0.0.1'
+	implementation 'com.github.fajaragungpramana:intent-extension:0.0.2'
 }
 ```
 
